@@ -1,0 +1,137 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #ff6f61; /* Coral brillante */
+    --secondary-color: #4a90e2; /* Azul suave */
+    --accent-color: #f7c59f; /* Melón suave */
+    --background-color: #f4f7f6; /* Gris claro */
+    --text-color: #333333; /* Gris oscuro */
+    --light-text-color: #ffffff; /* Blanco */
+    --muted-color: #b0bec5; /* Azul grisáceo */
+    --hover-color: #fa8072; /* Coral oscuro */
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Estilos para la sección "Acerca de mí" */
+#about {
+    background-color: var(--light-text-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid var(--secondary-color);
+}
+
+#about h2 {
+    color: var(--primary-color);
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* Estilos para la sección de experiencia */
+.experience-section {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--light-text-color);
+}
+
+.experience-section h4 {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Estilos para la sección de proyectos */
+#projects .project-card {
+    transition: transform 0.3s ease;
+    background-color: var(--light-text-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project-card:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-color);
+    color: var(--light-text-color);
+}
+
+#projects h2 {
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--muted-color);
+    padding: 20px;
+    color: var(--light-text-color);
+}
+
+footer a {
+    color: var(--light-text-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    .experience-section h2, 
+    #projects h2 {
+        font-size: 2rem;
+    }
+}
